@@ -6,6 +6,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
 import Modal from "./Modal";
 import Login from "./Login";
+import Link from "next/link";
 
 export default function Navbar() {
     const [showLoginModal, setShowLoginModal] = useState(false)
@@ -24,7 +25,7 @@ export default function Navbar() {
                 </div>
                 <div>
                     <ul className="flex items-center space-x-8">
-                        <li className="cursor-pointer hover:text-[#FF6A1A]">Home</li>
+                        <Link href="/"><li className="cursor-pointer hover:text-[#FF6A1A]">Home</li></Link>
                         <li className="cursor-pointer hover:text-[#FF6A1A]">Shop</li>
                         <li className="cursor-pointer hover:text-[#FF6A1A]">About us</li>
                         <li className="cursor-pointer hover:text-[#FF6A1A]">Blog</li>
