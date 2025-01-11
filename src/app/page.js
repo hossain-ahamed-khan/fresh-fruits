@@ -17,6 +17,7 @@ import blogImg3 from "../../public/fresh fruits images/blog-img-3.jpeg";
 import Image from "next/image";
 import { TiArrowRight } from "react-icons/ti";
 import ProductCard from "./components/ProductCard";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -37,11 +38,6 @@ export default function Home() {
             }}
             alt="Hero Main Image"
           />
-
-          {/* --------------------- Navbar ---------------------  */}
-          <div className="absolute top-0 w-full">
-            <Navbar />
-          </div>
 
           {/* --------------------- Hero --------------------- */}
           <div className="absolute top-48 left-48 h-[890px]">
